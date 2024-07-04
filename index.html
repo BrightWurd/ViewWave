@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="the-side-bar" id="the-side-bar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Movies</a></li>
+        <li><a href="">Series</a></li>
+        <li><a href="">Music</a></li>
+        <li><a href="">Animation</a></li>
+        <li><a href="">Downloads</a></li>
+      </ul>
+    </div>
+    <section id="the-section">
+      <nav class="navbar">
+        <!-- the navigation bar HTML -->
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Movies</a></li>
+          <li><a href="">Series</a></li>
+          <li><a href="">Music</a></li>
+          <li><a href="">Animation</a></li>
+          <li><a href="">Downloads</a></li>
+        </ul>
+        <div class="menucon" id="the-menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="box">
+          <form name="search">
+            <input
+              type="text"
+              class="input"
+              name="txt"
+              onmouseout="this.value = ''; this.blur();"
+            />
+          </form>
+          <i class="fas fa-search"></i>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="the-griderone">
+          <div class="the-type">
+            <h2>Trending</h2>
+          </div>
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/trending preview/42750115d68a876558e7e0115b6600c8.jpg"
+                  alt="Image 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/trending preview/atyf1poo8oe31.webp"
+                  alt="Image 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/trending preview/banishment_ver2.webp"
+                  alt="Image 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/trending preview/BR-SINTL-87634v2.jpg"
+                  alt="Image 4"
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="./images/trending preview/brave.jpg" alt="Image 5" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/trending preview/oblivion-movie-movies-oblivion-poster-wallpaper.jpg"
+                  alt="Image 6"
+                />
+              </div>
+              <div class="carousel-item">
+                <img src="./images/trending preview/OIP.jpg" alt="Image 7" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/trending preview/rescue_me_ver5_xlg.webp"
+                  alt="Image 8"
+                />
+              </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">
+              &#10094;
+            </button>
+            <button class="carousel-control next" onclick="nextSlide()">
+              &#10095;
+            </button>
+          </div>
+          <div class="news-container">
+            <!-- News Item 1 -->
+            <div class="news-item">
+              <div class="news-headline">
+                Tech Giants Face New Regulations in Europe
+              </div>
+              <div class="news-content">
+                The European Union has introduced new regulations aimed at
+                curbing the power of major technology companies. The Digital
+                Markets Act (DMA) and Digital Services Act (DSA) will impose
+                stricter rules on data sharing, user privacy, and market
+                dominance. Companies like Google, Apple, and Facebook will be
+                significantly affected by these changes.
+              </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="news-item">
+              <div class="news-headline">
+                Global Markets React to Fed Rate Hike
+              </div>
+              <div class="news-content">
+                Global financial markets have reacted to the Federal Reserve's
+                decision to raise interest rates by 0.25%. The move is seen as a
+                measure to combat rising inflation, but it has also led to
+                volatility in stock markets worldwide. Analysts are divided on
+                the long-term impact of this decision.
+              </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="news-item">
+              <div class="news-headline">
+                Climate Summit 2024: Key Agreements Reached
+              </div>
+              <div class="news-content">
+                World leaders have reached several key agreements at the 2024
+                Climate Summit in Nairobi. These include commitments to reduce
+                carbon emissions by 45% by 2030 and to increase funding for
+                renewable energy projects in developing countries. The summit
+                marks a significant step forward in global efforts to combat
+                climate change.
+              </div>
+            </div>
+
+            <!-- News Item 4 -->
+            <div class="news-item">
+              <div class="news-headline">
+                Breakthrough in Cancer Research Announced
+              </div>
+              <div class="news-content">
+                Scientists at Johns Hopkins University have announced a major
+                breakthrough in cancer research. A new treatment that uses
+                genetically modified immune cells has shown promising results in
+                early trials, with a significant number of patients experiencing
+                complete remission. The research team hopes to begin larger
+                clinical trials soon.
+              </div>
+            </div>
+
+            <!-- News Item 5 -->
+            <div class="news-item">
+              <div class="news-headline">
+                Olympic Games 2024: Paris Preparations Underway
+              </div>
+              <div class="news-content">
+                Preparations for the 2024 Olympic Games in Paris are well
+                underway. The city is investing heavily in infrastructure
+                improvements, including new sports venues and transportation
+                upgrades. Organizers are also emphasizing sustainability, with
+                plans to use renewable energy and minimize waste during the
+                event.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- the first set of movies -->
+        <div class="the-grider">
+          <div class="top-title">
+            <h3>Top pick</h3>
+          </div>
+          <div class="the-movies-first-list">
+            <div class="the-list">
+              <img
+                src="./images/top pick/Avengers-Endgame-Wallpaper-18.jpg"
+                alt="Avengers-Endgame-Wallpaper-18"
+              />
+              <a href=""><p>Avengers Endgame</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/top pick/be971278e142cce26bd139003835cf64.jpg"
+                alt="be971278e142cce26bd139003835cf64"
+              />
+              <a href=""> <p>Movie Title 2</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/top pick/blade runner.jpg"
+                alt="blade runner"
+              />
+              <a href=""><p>Blade Runner</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/top pick/OIP (1).jpg" alt="movies image" />
+              <a href=""><p>Movie Title 4</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/top pick/OIP (2).jpg" alt="movie image 2" />
+              <a href=""><p>Movie Title 5</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/top pick/OIP.jpg" alt="movie image 3" />
+              <a href=""><p>Movie Title 6</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/top pick/R (1).jpg" alt="movie image 4" />
+              <a href=""><p>Movie Title 7</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/top pick/R.jpg" alt="movie image 5" />
+              <a href=""><p>Movie Title 8</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/top pick/Rajinikanth-Jailer-Movie-First-Look-Poster-HD.jpg"
+                alt="movie image 6"
+              />
+              <a href=""> <p>Movie Title 9</p></a>
+            </div>
+          </div>
+          <!-- the second sets of movies -->
+          <div class="top-title">
+            <h3>Korean Drama</h3>
+          </div>
+          <div class="the-movies-first-list">
+            <div class="the-list">
+              <img
+                src="./images/K drama/the-10-best-teenagehighschool-korean-dramas-ever.jpg"
+                alt="Avengers-Endgame-Wallpaper-18"
+              />
+              <a href=""><p>korean drama</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/K drama/OIP.jpg"
+                alt="be971278e142cce26bd139003835cf64"
+              />
+              <a href=""> <p>K drama 2</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/K drama/OIP (3).jpg" alt="blade runner" />
+              <a href=""><p>k drama 1</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/K drama/OIP (2).jpg" alt="movies image" />
+              <a href=""><p>Movie Title 4</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/K drama/06707acbe6017a8ae8f531cf8dcbac63.jpg"
+                alt="movie image 2"
+              />
+              <a href=""><p>Movie Title 5</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/K drama/fullsizephoto1036037.jpg"
+                alt="movie image 3"
+              />
+              <a href=""><p>Movie Title 6</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/K drama/df2814f81c0def94ad24fa3a0e5dce83.jpg"
+                alt="movie image 4"
+              />
+              <a href=""><p>Movie Title 7</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/K drama/b70fb472542e4c81d01893f948b40be6--korean-drama-movies-korean-dramas.jpg"
+                alt="movie image 5"
+              />
+              <a href=""><p>Movie Title 8</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/K drama/1131w-Aj9bV_GaoAI.webp"
+                alt="movie image 6"
+              />
+              <a href=""> <p>Movie Title 9</p></a>
+            </div>
+          </div>
+
+          <!-- the third sets of movies -->
+          <div class="top-title">
+            <h3>Horror</h3>
+          </div>
+          <div class="the-movies-first-list">
+            <div class="the-list">
+              <img
+                src="./images/Horror movies/actor-it-chapter-one-310781_large.jpg"
+                alt="Avengers-Endgame-Wallpaper-18"
+              />
+              <a href=""><p>It</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/Horror movies/meta_eyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ==.webp"
+                alt="be971278e142cce26bd139003835cf64"
+              />
+              <a href=""> <p>Stab</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/Horror movies/OIP (1).jpg"
+                alt="blade runner"
+              />
+              <a href=""><p>The conjuring 1</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/Horror movies/OIP (2).jpg"
+                alt="movies image"
+              />
+              <a href=""><p>Sleepy hollow</p></a>
+            </div>
+            <div class="the-list">
+              <img
+                src="./images/Horror movies/OIP (4).jpg"
+                alt="movie image 2"
+              />
+              <a href=""><p>Megan</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/Horror movies/OIP.jpg" alt="movie image 3" />
+              <a href=""><p>Dead</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/Horror movies/R (1).jpg" alt="movie image 4" />
+              <a href=""><p>Annabelle</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/Horror movies/R (2).jpg" alt="movie image 5" />
+              <a href=""><p>veronica</p></a>
+            </div>
+            <div class="the-list">
+              <img src="./images/Horror movies/R (3).jpg" alt="movie image 6" />
+              <a href=""> <p>Nun</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-container the-sec">
+        <!-- News Item 1 -->
+        <div class="news-item">
+          <div class="news-headline">
+            Tech Giants Face New Regulations in Europe
+          </div>
+          <div class="news-content">
+            The European Union has introduced new regulations aimed at curbing
+            the power of major technology companies. The Digital Markets Act
+            (DMA) and Digital Services Act (DSA) will impose stricter rules on
+            data sharing, user privacy, and market dominance. Companies like
+            Google, Apple, and Facebook will be significantly affected by these
+            changes.
+          </div>
+        </div>
+
+        <!-- News Item 2 -->
+        <div class="news-item">
+          <div class="news-headline">Global Markets React to Fed Rate Hike</div>
+          <div class="news-content">
+            Global financial markets have reacted to the Federal Reserve's
+            decision to raise interest rates by 0.25%. The move is seen as a
+            measure to combat rising inflation, but it has also led to
+            volatility in stock markets worldwide. Analysts are divided on the
+            long-term impact of this decision.
+          </div>
+        </div>
+
+        <!-- News Item 3 -->
+        <div class="news-item">
+          <div class="news-headline">
+            Climate Summit 2024: Key Agreements Reached
+          </div>
+          <div class="news-content">
+            World leaders have reached several key agreements at the 2024
+            Climate Summit in Nairobi. These include commitments to reduce
+            carbon emissions by 45% by 2030 and to increase funding for
+            renewable energy projects in developing countries. The summit marks
+            a significant step forward in global efforts to combat climate
+            change.
+          </div>
+        </div>
+
+        <!-- News Item 4 -->
+        <div class="news-item">
+          <div class="news-headline">
+            Breakthrough in Cancer Research Announced
+          </div>
+          <div class="news-content">
+            Scientists at Johns Hopkins University have announced a major
+            breakthrough in cancer research. A new treatment that uses
+            genetically modified immune cells has shown promising results in
+            early trials, with a significant number of patients experiencing
+            complete remission. The research team hopes to begin larger clinical
+            trials soon.
+          </div>
+        </div>
+
+        <!-- News Item 5 -->
+        <div class="news-item">
+          <div class="news-headline">
+            Olympic Games 2024: Paris Preparations Underway
+          </div>
+          <div class="news-content">
+            Preparations for the 2024 Olympic Games in Paris are well underway.
+            The city is investing heavily in infrastructure improvements,
+            including new sports venues and transportation upgrades. Organizers
+            are also emphasizing sustainability, with plans to use renewable
+            energy and minimize waste during the event.
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms of Service</a></li>
+      </ul>
+      <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
